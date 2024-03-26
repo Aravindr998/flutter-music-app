@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:music_player/provider/music_list.dart';
+import 'package:music_player/widgets/bottom_section.dart';
+import 'package:music_player/widgets/current_playing.dart';
 import 'package:music_player/widgets/home_card.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -111,8 +113,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       ),
                     ],
                   ),
+                  const SizedBox(
+                    height: 100,
+                  ),
+                  const BottomSection()
                 ],
               ),
+            ),
+            const Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: 100,
+              child: CurrentPlaying(),
             )
           ],
         ),
