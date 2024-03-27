@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/widgets/music_controls.dart';
 
 class CurrentPlaying extends StatefulWidget {
   const CurrentPlaying({super.key});
@@ -18,22 +19,26 @@ class _CurrentPlayingState extends State<CurrentPlaying> {
           topRight: Radius.circular(20),
         ),
       ),
-      child: Row(
-        children: [
-          Card(
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(
-                Radius.circular(10),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Row(
+          children: [
+            Card(
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+              ),
+              clipBehavior: Clip.hardEdge,
+              child: Image.asset(
+                'assets/images/beatles.jpg',
+                width: 50,
+                height: 50,
               ),
             ),
-            clipBehavior: Clip.hardEdge,
-            child: Image.asset(
-              'assets/images/beatles.jpg',
-              width: 50,
-              height: 50,
-            ),
-          ),
-        ],
+            const MusicControls()
+          ],
+        ),
       ),
     );
   }

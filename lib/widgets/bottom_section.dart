@@ -27,7 +27,7 @@ class _BottomSectionState extends ConsumerState<BottomSection> {
       child: Row(
         children: [
           const Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               RotatedBox(
@@ -48,6 +48,9 @@ class _BottomSectionState extends ConsumerState<BottomSection> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 10,
+              )
             ],
           ),
           Expanded(
