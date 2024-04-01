@@ -4,6 +4,8 @@
 <dict>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>$(PROJECT_NAME) requires access to media library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photos to read MP3 files.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

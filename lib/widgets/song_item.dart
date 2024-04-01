@@ -16,7 +16,7 @@ class SongItem extends StatelessWidget {
         Container(
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
           clipBehavior: Clip.hardEdge,
-          child: Image.asset(
+          child: Image.memory(
             song.albumCover,
             width: 50,
             height: 50,

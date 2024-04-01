@@ -1,6 +1,6 @@
 import 'package:music_player/models/song.dart';
 
-const dummySongs = [
+final dummySongs = [
   Song(
     path: "",
     title: "Hey Jude",

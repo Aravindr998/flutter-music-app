@@ -31,7 +31,7 @@ class HomeCard extends StatelessWidget {
         clipBehavior: Clip.hardEdge,
         child: Stack(
           children: [
-            Image.asset(
+            Image.memory(
               song.albumCover,
               width: double.infinity,
               height: double.infinity,
